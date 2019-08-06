@@ -48,23 +48,23 @@ body {
 }
 
 .Intro {
-    margin-top: 13vh;
+    margin-top: 16vh;
     margin-left: 3vw;
-    margin-bottom: 13vh;
+    margin-bottom: 16vh;
 }
 
 .Intro p {
     font-family: Jay Gothic Light;
     color: var(--SecondaryBGColor);
-    font-size: 32pt;
+    font-size: calc(16pt + 1.2vw);
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .Projects {
     display: grid;
-    
-    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));  
+
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     grid-template-rows: auto;
     grid-gap: 40px;
 }
@@ -73,11 +73,20 @@ body {
     min-height: 300px;
     position: relative;
     margin: 8px;
-    padding:20px;
+    padding: 20px;
     background-color: var(--SecondaryBGColor);
     border-radius: 4px;
 
 }
+
+/*SMARTPHONE*/
+@media (max-width: 600px) {
+    .Projects {
+        grid-template-columns: repeat(auto-fit, fr);
+    }
+}
+
+
 
 .ProjectTile .Shadow {
     background: var(--HightlightColor);
@@ -103,8 +112,8 @@ body {
     margin-left: 4%;
     margin-bottom: 0;
 
-    font-size:calc(24pt + 2vw);
-    
+    font-size: calc(24pt + 2vw);
+
     font-family: Jay Gothic Light;
     font-style: italic;
 
@@ -118,7 +127,7 @@ body {
     margin-top: 0;
 
     font-family: Jay Gothic Light;
-    font-size: 20pt;
+    font-size: calc(16pt + .3vw);
     color: var(--LightColor);
 
     text-transform: uppercase;
