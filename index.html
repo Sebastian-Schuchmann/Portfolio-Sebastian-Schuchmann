@@ -13,15 +13,31 @@
 <body>
     <div class="Container">
         <div class="animated jello Header">
-            <img srcset="
+            <picture>
+                <source type="image/webp" img srcset="
+                    Assets/CreativeTechnologist4x.webp 1000w,
+                    Assets/CreativeTechnologist3x.webp 800w,
+                    Assets/CreativeTechnologist2x.webp 600w,
+                    Assets/CreativeTechnologist1x.webp 400w
+                    ">
+                <source type="image/png" img srcset="
+            Assets/CreativeTechnologist4x.png 1000w,
+            Assets/CreativeTechnologist3x.png 800w,
+            Assets/CreativeTechnologist2x.png 600w,
+            Assets/CreativeTechnologist1x.png 400w
+            ">
+
+                <img src="Assets/CreativeTechnologist1x.png">
+            </picture>
+            <!-- <img srcset="
             Assets/CreativeTechnologist4x.png 1000w,
             Assets/CreativeTechnologist3x.png 800w,
             Assets/CreativeTechnologist2x.png 600w,
             Assets/CreativeTechnologist1x.png 400w
             " 
-            src="Assets/CreativeTechnologist.png">
+            src="Assets/CreativeTechnologist.png"> -->
         </div>
-  
+
         <div class="animated fadeInUp Intro">
 
             <p>HELLO! MY NAME IS SEBASTIAN.</p>
