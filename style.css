@@ -86,7 +86,7 @@ body {
 @media (max-device-width: 600px) {
     .Projects {
         grid-template-columns: 1fr;
-    }
+/**/    }
 }
 
 @media (min-device-width: 601px) {
