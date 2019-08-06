@@ -7,6 +7,48 @@
  *
  * Copyright (c) 2019 Daniel Eden
  */
+ @keyframes gradient {
+  from {
+      background: var(--HightlightColor);
+  }
+
+  25% {
+      background: rgb(255, 225, 0);
+  }
+
+  50% {
+      background: rgb(0, 217, 255);
+  }
+
+  75% {
+      background: rgba(254, 91, 116, 1);
+  }
+}
+
+@keyframes growing {
+  from {
+      left: 8px;
+      top: 8px;
+  }
+
+  to {
+      left: 16px;
+      top: 16px;
+  }
+}
+
+@keyframes shrinking {
+  from {
+      left: 16px;
+      top: 16px;
+  }
+
+  to {
+      left: 8px;
+      top: 8px;
+  }
+
+}
 
 @-webkit-keyframes bounce {
   from,
