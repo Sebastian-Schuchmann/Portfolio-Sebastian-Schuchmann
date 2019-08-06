@@ -83,14 +83,13 @@ body {
 
 
 /*SMARTPHONE*/
-@media (max-width: 600px) {
+@media (max-device-width: 600px) {
     .Projects {
         grid-template-columns: 1fr;
-        opacity: 0.1;
     }
 }
 
-@media (min-width: 601px) {
+@media (min-device-width: 601px) {
     .Projects {
         grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     }
