@@ -61,13 +61,7 @@ body {
     margin-bottom: 0px;
 }
 
-.Projects {
-    display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 40px;
-}
 
 .ProjectTile {
     min-height: 300px;
@@ -79,10 +73,26 @@ body {
 
 }
 
+.Projects {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 40px;
+}
+
+
 /*SMARTPHONE*/
 @media (max-width: 600px) {
     .Projects {
-        grid-template-columns: repeat(auto-fit, fr);
+        grid-template-columns: 1fr;
+        opacity: 0.1;
+    }
+}
+
+@media (min-width: 601px) {
+    .Projects {
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     }
 }
 
