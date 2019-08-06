@@ -19,7 +19,7 @@
 body {
     /* background-color: var(--FirstBGColor); */
     background-color: var(--SecondaryBGColor);
-    background-image: url(Hintergrund.svg);
+    background-image: url(Assets/Hintergrund.svg);
     background-size: cover;
     height: 4200px;
 }
@@ -86,7 +86,7 @@ body {
 @media (max-device-width: 600px) {
     .Projects {
         grid-template-columns: 1fr;
-/**/    }
+  }
 }
 
 @media (min-device-width: 601px) {
