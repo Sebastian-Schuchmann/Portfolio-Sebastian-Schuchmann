@@ -64,7 +64,7 @@ body {
 .Projects {
     display: grid;
     
-    grid-template-columns: repeat( auto-fit, minmax(360px, 1fr) );  
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));  
     grid-template-rows: auto;
     grid-gap: 40px;
 }
