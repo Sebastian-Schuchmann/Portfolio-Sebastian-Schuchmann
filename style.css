@@ -4,24 +4,35 @@
     --SecondaryBGColor: #efefef;
     --HightlightColor: #63f800;
     --LightColor: #585869;
+    --LogoHue: 0deg;
 }
 
 @font-face {
     font-family: Jay Gothic Regular;
     src: url(./Fonts/JayGothicRegular.ttf);
+    font-display: fallback;
 }
 
 @font-face {
     font-family: Jay Gothic Light;
     src: url(./Fonts/JayGothicLight.ttf);
+    font-display: fallback;
 }
 
 body {
-    /* background-color: var(--FirstBGColor); */
     background-color: var(--SecondaryBGColor);
     background-image: url(Assets/Hintergrund.svg);
     background-size: cover;
-    height: 4200px;
+
+
+    font-family: Jay Gothic Regular;
+}
+
+.party{
+    /* background-color: #63f800;
+    background-image: none; */
+    animation: gradientColor 1.5s infinite, growing .1s;
+    
 }
 
 .Container {
@@ -38,13 +49,10 @@ body {
     position: absolute;
 }
 
-.Header {
-    /* height: 780px; */
-}
-
 .Header img {
     width: 100%;
     margin-top: 20px;
+    filter: hue-rotate(var(--LogoHue));
 }
 
 .Intro {
@@ -55,32 +63,37 @@ body {
 
 .Intro p {
     font-family: Jay Gothic Light;
-    color: var(--SecondaryBGColor);
     font-size: calc(16pt + 1.2vw);
+
+    color: var(--SecondaryBGColor);
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
+.Intro p :hover{
+    color: var(--HightlightColor);
+    cursor: pointer;
+}
 
 
 .ProjectTile {
-    min-height: 300px;
     position: relative;
+    min-height: 300px;
+
     margin: 8px;
     padding: 20px;
-    background-color: var(--SecondaryBGColor);
     border-radius: 4px;
 
+    background-color: var(--SecondaryBGColor);
+    cursor: pointer;
 }
 
 .Projects {
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     grid-template-rows: auto;
     grid-gap: 40px;
 }
-
 
 /*SMARTPHONE*/
 @media (max-device-width: 600px) {
@@ -95,25 +108,30 @@ body {
     }
 }
 
-
-
 .ProjectTile .Shadow {
     background: var(--HightlightColor);
     position: absolute;
     width: 100%;
     height: 100%;
+
     left: 8px;
     top: 8px;
+
     border-radius: 4px;
     z-index: -1;
     animation: shrinking .5s;
 }
 
 .ProjectTile:hover .Shadow {
-    /* box-shadow: 6px 6px 0px 0px var(--HightlightColor);*/
-    animation: gradient 1s infinite, growing .1s;
+    animation: gradient 20.5s infinite, growing .1s; 
+    
+    
     left: 16px;
     top: 16px;
+}
+
+.ProjectTile:hover {
+    filter: blur(0px);
 }
 
 .ProjectTile h1 {
@@ -146,4 +164,43 @@ body {
 
 .ProjectTile .ExtraSlim {
     max-width: 50%;
+}
+
+.ContactMe h1{
+    font-family: Jay Gothic Light; 
+    font-size: 8vw;
+    margin-top: 42vh;
+    overflow: hidden;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+a {
+    color: var(--HightlightColor);
+    font-style: italic;
+}
+
+h1 a:hover{
+    
+    filter: blur(4px);
+    filter: invert(1);
+}
+
+.Footer {
+    margin: 0 auto;
+    margin-top: 42vh;
+  width:max-content;
+    max-width: 14vw;
+
+}
+.Footer p{
+
+    font-size: 12pt;
+    color: var(--LightColor);
+}
+
+.Footer img{
+    margin-left:4vw;
+        width: 32px;
+  
 }

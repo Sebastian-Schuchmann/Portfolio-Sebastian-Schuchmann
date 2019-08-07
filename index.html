@@ -10,39 +10,33 @@
     <title>Portfolio Sebastian Schuchmann</title>
 </head>
 
-<body>
+<body id="body">
     <div class="Container">
+
         <div class="animated jello Header">
             <picture>
                 <source type="image/webp" img srcset="
-                    Assets/CreativeTechnologist4x.webp 1600w,
-                    Assets/CreativeTechnologist3x.webp 1200w,
-                    Assets/CreativeTechnologist2x.webp 800w,
-                    Assets/CreativeTechnologist1x.webp 400w
-                    ">
+                Assets/CreativeTechnologist4x.webp 1600w,
+                Assets/CreativeTechnologist3x.webp 1200w,
+                Assets/CreativeTechnologist2x.webp 800w,
+                Assets/CreativeTechnologist1x.webp 400w">
                 <source type="image/png" img srcset="
-            Assets/CreativeTechnologist4x.png 1600w,
-            Assets/CreativeTechnologist3x.png 1200w,
-            Assets/CreativeTechnologist2x.png 800w,
-            Assets/CreativeTechnologist1x.png 400w
-            ">
-
+                Assets/CreativeTechnologist4x.png 1600w,
+                Assets/CreativeTechnologist3x.png 1200w,
+                Assets/CreativeTechnologist2x.png 800w,
+                Assets/CreativeTechnologist1x.png 400w
+                ">
                 <img src="Assets/CreativeTechnologist1x.png">
             </picture>
-            <!-- <img srcset="
-            Assets/CreativeTechnologist4x.png 1000w,
-            Assets/CreativeTechnologist3x.png 800w,
-            Assets/CreativeTechnologist2x.png 600w,
-            Assets/CreativeTechnologist1x.png 400w
-            " 
-            src="Assets/CreativeTechnologist.png"> -->
         </div>
 
         <div class="animated fadeInUp Intro">
-
             <p>HELLO! MY NAME IS SEBASTIAN.</p>
             <div id="IntroBox"></div>
-            <p>I LIKE TO PLAY AROUND AND MAKE COOL SHIT HAPPEN!</p>
+            <p>I LIKE TO PLAY AROUND AND MAKE <u onclick="
+            if(document.getElementById('body').className === 'party')
+            document.getElementById('body').className = ''; else document.getElementById('body').className = 'party';
+            ">COOL SHIT</u> HAPPEN!</p>
         </div>
         <div class="animated fadeIn Projects">
             <div class="ProjectTile">
@@ -66,8 +60,17 @@
                 <p class="ExtraSlim">#UNITY 3D #UX-DESIGN #ARDUINO #C-SHARP</p>
             </div>
         </div>
-        <div class="ContactMe"></div>
-        <div class="Footer"></div>
+    </div>
+
+    <div class="ContactMe">
+        <h1>ME CONTACT ME <a href="">CONTACT ME</a> CONTACT ME CONTACT ME</h1>
+    </div>
+    <div class="Container">
+
+        <div class="Footer">
+            <img src="Assets/peace.svg">
+            <p>Thanks for checking out my site</p>
+        </div>
     </div>
 </body>
 
