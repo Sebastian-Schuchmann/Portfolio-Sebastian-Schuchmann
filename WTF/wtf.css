@@ -1,0 +1,70 @@
+
+h1{
+    font-size: 8vw;
+    
+   
+
+}
+
+h1 {
+    /*https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif 150%
+            https://media.giphy.com/media/4fHmWVnUmKTNm/giphy.gif
+            https://media.giphy.com/media/26tnffyD8Rt8rIQ4E/giphy.gif
+    */
+
+    /*For later: https://media.giphy.com/media/vCqqZX0drhNpC/giphy.gif*/
+
+    background: url(
+        https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif
+            );        
+    background-size: contain;
+    background-position: top left;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* filter: brightness(100%); */
+    /*
+    filter: contrast(10%)
+    */
+    filter: saturate(180%);
+
+    /* filter: blur(10px); */
+
+
+  }
+body{
+    background-color: #00002a;
+    margin: 12vw;
+    color: #e9e8e8;
+    font-family: Jay Gothic Light; 
+
+}
+
+img{
+    width:10vw;
+    -webkit-mask-image:  url(
+        https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif
+            );  
+    mask-image:  url(
+        https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif
+            );  
+}
+
+img{
+    fill: url(
+        https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif
+            );
+}
+
+img:hover{
+    animation: imghover .2s;
+    width: 11vw;
+}
+
+@keyframes imghover{
+    0%{
+        width:10vw;
+    }
+    100%{
+        width:11vw;
+    }
+}

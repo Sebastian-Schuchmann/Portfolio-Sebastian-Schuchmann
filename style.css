@@ -1,7 +1,8 @@
 /* Global Variables */
 :root {
     --FirstBGColor: #00002a;
-    --SecondaryBGColor: #efefef;
+    --SecondaryBGColor: #e9e8e8;
+    --ThirdBGColor: #dcdcdc;
     --HightlightColor: #63f800;
     --LightColor: #585869;
     --LogoHue: 0deg;
@@ -19,13 +20,29 @@
     font-display: fallback;
 }
 
-body {
+#body {
     background-color: var(--SecondaryBGColor);
     background-image: url(Assets/Hintergrund.svg);
     background-size: cover;
 
-
     font-family: Jay Gothic Regular;
+}
+
+
+h1{
+    font-family: Jay Gothic Light; 
+    font-size: 8vw;
+
+}
+
+.Header{
+    text-align: right;
+}
+
+.Header a{
+    color: var(--SecondaryBGColor);
+    font-style: italic;
+    opacity: 0.6;
 }
 
 .party{
@@ -204,3 +221,4 @@ h1 a:hover{
         width: 32px;
   
 }
+
