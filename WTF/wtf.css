@@ -14,22 +14,12 @@ h1 {
 
     /*For later: https://media.giphy.com/media/vCqqZX0drhNpC/giphy.gif*/
 
-    background: url(
-        https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif
-            );        
+    background: url(https://media.giphy.com/media/26u6dDcYWfi3iPKFO/giphy.gif);        
     background-size: contain;
     background-position: top left;
     -webkit-background-clip: text;
     color: transparent;
-    /* filter: brightness(100%); */
-    /*
-    filter: contrast(10%)
-    */
     filter: saturate(180%);
-
-    /* filter: blur(10px); */
-
-
   }
 body{
     background-color: #00002a;

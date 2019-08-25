@@ -39,10 +39,21 @@ h1{
     text-align: right;
 }
 
-.Header a{
+.Header u{
     color: var(--SecondaryBGColor);
     font-style: italic;
     opacity: 0.6;
+}
+
+.Header h1{
+    font-size: 8vw;
+    margin-top: 8vw;
+    margin-bottom: 12vw;
+}
+
+.Header u:hover{
+    color: var(--HightlightColor);
+    cursor: pointer;
 }
 
 .party{
@@ -190,6 +201,7 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     font-style: italic;
+    
 }
 
 a {
